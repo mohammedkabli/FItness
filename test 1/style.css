@@ -1,0 +1,113 @@
+.second-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  .second-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.second-section__description {
+  width: 30%;
+  margin: 10%;
+}
+
+.second-section__description h2 {
+  font-size: 2em;
+}
+
+.second-section__description p {
+  font-size: 1.3em;
+  color: #909090;
+  padding: 2%;
+}
+
+@media screen and (max-width: 375px) {
+  .second-section__description p {
+    height: 300px;
+  }
+}
+
+.second-section__images {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .second-section__images {
+    width: 50%;
+  }
+}
+
+.second-section__images--s {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 0 38px #d8d4d4;
+          box-shadow: 6px 0 38px #d8d4d4;
+  padding: 0% 5% 0% 5%;
+  width: 70%;
+}
+
+.second-section__images--m {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 0 38px #d8d4d4;
+          box-shadow: 6px 0 38px #d8d4d4;
+  padding: 0% 5% 0% 5%;
+  width: 60%;
+}
+
+.second-section__images small {
+  color: #909090;
+  font-size: .6em;
+}
+
+.second-section__images .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35%;
+  height: 60%;
+}
+/*# sourceMappingURL=style.css.map */

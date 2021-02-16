@@ -1,0 +1,71 @@
+$primary-color: #fff;
+$secondary-color: #000;
+$orange-color: #f13a11;
+$shadow-color: #171819;
+$gray-text: #909090;
+$white-text: #fff;
+$table-font-size: 15px;
+$border-color: #212122;
+$BSC-font: 'Barlow Semi Condensed', sans-serif;
+.second-section{
+    display: flex;
+    background-color: whitesmoke;
+    font-family: $BSC-font;
+    @media screen and(max-width:375px){
+        width: 100%;
+        // display: none;
+        display: flex;
+        flex-direction: column;
+    }
+    // position: relative;
+    @mixin team {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3em;
+        align-items: center;
+        background-color: $primary-color;
+        box-shadow:  6px 0 38px rgb(216, 212, 212);
+        padding: 0% 5% 0% 5%;
+    }
+   &__description{
+       width: 30%;
+       
+       margin: 10%;
+       h2{font-size: 2em; }
+       p{font-size: 1.3em;
+        color: $gray-text;
+        padding: 2%;
+        @media screen and(max-width:375px){
+           height: 300px;
+        }
+        // position: absolute;
+    }
+   }
+   &__images{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    @media screen and(max-width:375px){
+        width: 50%;
+    }
+    &--s{
+        @include team;
+        width: 70%;
+    }
+    &--m{
+        @include team;
+        width: 60%; 
+    }
+    small{
+        color: $gray-text;
+        font-size: .6em;
+    }
+     .icon{
+        display: flex;
+        flex-direction: column;
+        gap: 35%;
+        height: 60%;
+     }
+   }
+}
