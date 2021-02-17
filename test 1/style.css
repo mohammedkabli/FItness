@@ -1,27 +1,55 @@
+
 .second-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: whitesmoke;
   font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
 }
-
-@media screen and (max-width: 375px) {
-  .second-section {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+ 
+@media screen and (max-width: 936px) {
+  .second-section__container {
+    
+    margin-top: 2em;
+    width: 100% !important;
+    min-width: 313px !important;
   }
-}
 
+  .second-section__cards{
+ 
+      margin-bottom: 0px;
+      
+      justify-content: space-around !important;
+  }
+  .second-section__card {
+   
+    min-width: 275px !important;
+  }
+  .second-section__card--left {
+    margin-right: 0em !important;
+  
+  }
+  .second-section {
+
+    height: 100%;
+  }
+} 
+
+.second-section__container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  min-width: 468px;
+  justify-content: center;
+  
+}
 .second-section__description {
-  width: 30%;
-  margin: 10%;
+  max-width: 514px;
+    margin: 0 auto;
 }
 
 .second-section__description h2 {
@@ -34,27 +62,36 @@
   padding: 2%;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .second-section__description p {
     height: 300px;
   }
-}
+} */
 
-.second-section__images {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.second-section__cards{
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+.second-section__card {
+  width: 40%;
+  min-width: 214px;
+  max-width: 361px;
+}
+.second-section__card--left {
+  margin-right: 2.5em;
+
+}
+.img{
+  width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .second-section__images {
     width: 50%;
   }
-}
+} */
 
 .second-section__images--s {
   height: 90px;
